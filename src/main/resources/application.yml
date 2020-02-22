@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: studentmanager
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 721000
+    url: jdbc:mysql://localhost:3306/studentmanage?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    type: com.zaxxer.hikari.HikariDataSource
+
+
+mybatis:
+  base-packages: com.tang.studentmanager.domain
+  mapper-locations: mapper/*.xml
+
+server:
+  port: 8081
