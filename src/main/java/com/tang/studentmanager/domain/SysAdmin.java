@@ -18,6 +18,19 @@ public class SysAdmin extends BaseDomain{
     @Column(name = "`password`")
     private String password;
 
+    @Column(name = "sex")
+    private Integer sex;
+
     @Column(name = "createTime")
     private Date createtime;
+
+    @Column(name = "avatar")
+    private String avatar;
+
+    @Column(name = "make")
+    private String make;
+
+    @Column(name = "birthday")
+    private Date birthday;
+
 }

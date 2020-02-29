@@ -1,7 +1,12 @@
 package com.tang.studentmanager.mapper;
 
-import com.tang.studentmanager.domain.SysTheacher;
+import com.tang.studentmanager.domain.SysTeacher;
 import tk.mybatis.mapper.MyMapper;
 
-public interface SysTheacherMapper extends MyMapper<SysTheacher> {
+import java.util.List;
+
+public interface SysTheacherMapper extends MyMapper<SysTeacher> {
+
+    List<SysTeacher> getTheacherAll(Integer courseId, String username);
+
 }

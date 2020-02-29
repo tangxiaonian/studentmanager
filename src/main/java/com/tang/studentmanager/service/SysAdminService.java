@@ -10,4 +10,7 @@ import com.tang.studentmanager.domain.SysAdmin;
  * @Created by ASUS
  */
 public interface SysAdminService extends BaseService<SysAdmin> {
+
+    SysAdmin login(SysAdmin sysAdmin);
+
 }

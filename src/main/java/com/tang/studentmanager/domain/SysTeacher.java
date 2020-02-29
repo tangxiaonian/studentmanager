@@ -2,11 +2,13 @@ package com.tang.studentmanager.domain;
 
 import java.util.Date;
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 @Data
-@Table(name = "sys_theacher")
-public class SysTheacher {
+@Table(name = "sys_teacher")
+public class SysTeacher {
     @Id
     @Column(name = "id")
     @GeneratedValue(generator = "JDBC")
@@ -18,15 +20,28 @@ public class SysTheacher {
     @Column(name = "`password`")
     private String password;
 
+    @Column(name = "sex")
+    private Integer sex;
+
     @Column(name = "createTime")
     private Date createtime;
 
+    @JsonFormat(pattern = "yyyy-MM-dd")
     @Column(name = "birthday")
     private Date birthday;
+
+    @Column(name = "avatar")
+    private String avatar;
+
+
+    @Column(name = "make")
+    private String make;
 
     /**
      * 班级id
      */
     @Column(name = "course_id")
     private Integer courseId;
+
+    private SysCourse sysCourse;
 }

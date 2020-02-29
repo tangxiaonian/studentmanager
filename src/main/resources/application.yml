@@ -1,6 +1,11 @@
 spring:
   application:
     name: studentmanager
+  upload:
+    path: G:\Intell_Work\studentmanager\src\main\resources\static\upload
+
+  thymeleaf:
+    cache: false
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -16,3 +21,7 @@ mybatis:
 
 server:
   port: 8081
+
+logging:
+  level:
+    com.tang.studentmanager.mapper: debug

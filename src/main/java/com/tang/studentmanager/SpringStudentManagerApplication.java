@@ -2,6 +2,7 @@ package com.tang.studentmanager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import tk.mybatis.spring.annotation.MapperScan;
 
 /**
  * @Classname SpringStudentManagerApplication
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2020/2/21 13:57
  * @Created by ASUS
  */
+@MapperScan(basePackages = {"com.tang.studentmanager.mapper"})
 @SpringBootApplication
 public class SpringStudentManagerApplication {
 

@@ -6,7 +6,11 @@
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="username" jdbcType="VARCHAR" property="username" />
     <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="make" jdbcType="VARCHAR" property="make" />
     <result column="createTime" jdbcType="DATE" property="createtime" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="sex" jdbcType="INTEGER" property="sex" />
   </resultMap>
   <sql id="Base_Column_List">
     <!--@mbg.generated generated on Sat Feb 22 09:38:07 CST 2020.-->

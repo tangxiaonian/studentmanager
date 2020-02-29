@@ -27,11 +27,61 @@
         </option>
         <option name="tableGenerateConfigs">
           <map>
+            <entry key="studentmanage:notice">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Notice" />
+                  <option name="moduleName" value="studentmanager" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="studentmanage:sys_admin">
               <value>
                 <TableGenerateConfig>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="SysAdmin" />
+                  <option name="moduleName" value="studentmanager" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="studentmanage:sys_class">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysClass" />
+                  <option name="moduleName" value="studentmanager" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="studentmanage:sys_course">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysCourse" />
+                  <option name="moduleName" value="studentmanager" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="studentmanage:sys_elective">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysElective" />
+                  <option name="moduleName" value="studentmanager" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="studentmanage:sys_resource">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysResource" />
                   <option name="moduleName" value="studentmanager" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
